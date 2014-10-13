@@ -1,0 +1,1 @@
+window.Baker = Ember.Application.create();
