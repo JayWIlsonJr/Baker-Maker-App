@@ -3,10 +3,10 @@
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 @import '../bower_components/bitters/app/assets/stylesheets/base';
 
-// $column: 90px;
-// $gutter: 30px;
-// $grid-columns: 12;
-// $max-width: em(1088);
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: (100);
 
 // Header Variables:
 $navigation-padding: 1em;
@@ -94,6 +94,15 @@ header.navigation {
     float: none;
     @include media ($horizontal-bar-mode) {
       float: left;
+    }
+
+    p {
+      color: $white;
+      font-weight: bold;
+      font-size: $h2-font-size;
+      position: absolute;
+      right: 50%;
+      top: 6px;
     }
   }
 
@@ -291,6 +300,7 @@ header.navigation {
 
   a.sign-up {
     margin-top: 1.2em;
+    margin-right: 1.2em;
     float: right;
     @include transition (all 0.2s ease-in-out);
     display: inline;
