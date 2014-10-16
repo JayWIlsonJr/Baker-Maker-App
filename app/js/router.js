@@ -14,7 +14,6 @@ Baker.Router.map(function() {
     this.route('show', { path: ':recipe_id'}) // http://BatchMaker.com/recipes/671527653
   });
 
-
   this.route('login'); // http://BatchMaker.com/login
   this.route('logout'); // http://BatchMaker.com/logout
   this.route('signup') // http://BatchMaker.com/signup

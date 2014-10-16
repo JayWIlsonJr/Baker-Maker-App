@@ -4,12 +4,32 @@
     <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     
     <div class="nav">
-     <p>Baker Maker</p>
-    </div>
+    <span>The kitchen is yours, Chef!</span>
+     <p>Batch Maker</p>
+    </div><!-- .nav -->
+
     <div class="navigation-tools">
-      
-      </div>
+      <span class="fa fa-plus fa-2x"></span>
+      <span class="fa fa-gear fa-2x"></span>
+      <span class="fa fa-user fa-2x"></span>
       <a href="javascript:void(0)" class="sign-up">Sign Up</a>
-    </div>
-  </div>
+    </div><!-- .navigation-Wrapper -->
+
+  </div><!-- .navigation-wrapper -->
 </header>
+
+<div class="container">
+  <section class='sidebar'>
+    <ul class="sidebar-links">
+      <li><a href="">My Recipes</a></li>
+      <li><a href="">Public Recipes</a></li>    
+      <li><a href="">Popular Recipes</a></li>
+      <li><a href="">My Favorite Recipes</a></li>
+      <li><a href="">My Pantry</a></li>
+    </ul><!-- .sidebar-links -->
+  </section>
+
+  <div class="content-area">
+    {{outlet}}
+  </div><!-- .content-area -->
+</div><!-- .container -->
