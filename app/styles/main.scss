@@ -3,7 +3,7 @@ $gutter: 30px;
 $grid-columns: 12;
 
 @import '../bower_components/bourbon/dist/bourbon';
-//@import 'grid-settings';
+@import 'grid-settings';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 @import 'bitters/base';
 

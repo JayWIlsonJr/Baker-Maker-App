@@ -1,0 +1,13 @@
+<div class="recipeWrapper">
+  <form>
+    {{
+      input type="text" 
+      class="recipe-name" 
+      placeholder='Recipe Name' 
+      value=recipeName
+    }}
+
+    {{input type="text" class="author-name" placeholder='By:' value=authorName }}
+    <button {{action "createRecipe"}}>Add Recipe</button>
+  </form>
+</div><!-- .recipeWrapper -->

@@ -133,7 +133,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
         '.tmp/styles/**/*.css',
         'app/js/**/*.js',
         'app/images/**/*',
-        'app/templates/*.hbs'
+        'app/templates/**/*.hbs'
     ]).on('change', function (file) {
         server.changed(file.path);
     });

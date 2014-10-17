@@ -18,3 +18,10 @@ Baker.Router.map(function() {
   this.route('logout'); // http://BatchMaker.com/logout
   this.route('signup') // http://BatchMaker.com/signup
 });
+
+Baker.ApplicationRoute = Ember.Route.extend({
+  model: function() {
+    return this.store.find('user', 'user_id_jay');
+  }
+});
+

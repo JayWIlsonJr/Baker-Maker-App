@@ -1,4 +1,4 @@
-Baker.UserModel = DS.Model.extend({
+Baker.User = DS.Model.extend({
   name: DS.attr('string'),
-  recipes: hasMany('recipe')
+  recipes: DS.hasMany('recipe')
 });
