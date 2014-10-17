@@ -3,12 +3,10 @@
   "private": true,
   "dependencies": {
     "modernizr": "~2.6.2",
-    "jquery": "~1.11.0",
     "emberfire": "~1.2.7",
     "bourbon": "~4.0.2",
     "neat": "~1.6.0",
-    "refills": "~0.0.2",
-    "bitters": "~0.10.1"
+    "refills": "~0.0.2"
   },
   "devDependencies": {}
 }
