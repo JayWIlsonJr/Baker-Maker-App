@@ -1,5 +1,13 @@
-<div class="recipeWrapper">
+<div class="recipes-wrapper">
+  
+  <p class='create-header'>Basic Recipe Information</p>
+
   <form>
+    <div class="add-photo-tile">
+      <p>+</p>
+      <span>Add Photo</span>
+    </div><!-- .add-photo-tile -->
+
     {{
       input type="text" 
       class="recipe-name" 
@@ -7,7 +15,38 @@
       value=recipeName
     }}
 
-    {{input type="text" class="author-name" placeholder='By:' value=authorName }}
-    <button {{action "createRecipe"}}>Add Recipe</button>
+    {{
+      input type="text" 
+      class="author-name" 
+      placeholder='By:' 
+      value=authorName 
+    }}
+
+    <input type="checkbox" />Make Recipe Public
+    <input type="checkbox" />Make Recipe Private
+
+    <div class="create-toprow-inputs">
+
+      <select name="Recipe Type">
+        <option value="value1" selected>Recipe Type</option>
+        <option value="value2">Breakfast</option>
+        <option value="value3">Lunch</option>
+        <option value="value4">Dinner</option>
+        <option value="value5">Dessert</option>
+      </select>
+
+      <input type="text" placeholder="Prep Time"  />
+      <input type="text" placeholder="Cook Time"  />
+
+      <select name="Cook Temp" >
+        <option value="value1">Cook Temp &deg;F / &deg;C</option>
+        <option value="value2">Farenheit</option>
+        <option value="value3">Celsius</option>
+      </select>
+
+    </div>
+
+
+    <button {{action "createRecipe"}} class="create-button">Save this Recipe!</button>
   </form>
 </div><!-- .recipeWrapper -->
